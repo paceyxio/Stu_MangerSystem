@@ -27,9 +27,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         db = openOrCreateDatabase("user.db", MODE_PRIVATE, null);
         db.execSQL("create table if not exists usertb (_id integer primary key autoincrement,name text not null,address text,telephone text)");
-        db.execSQL("insert into usertb(name,address,telephone) values ('张三','南昌','1234567')");
-        db.execSQL("insert into usertb(name,address,telephone) values ('李四','宜春','12345678')");
-        db.execSQL("insert into usertb(name,address,telephone) values ('王五','九江','123456789')");
+//        db.execSQL("insert into usertb(name,address,telephone) values ('张三','南昌','1234567')");
+//        db.execSQL("insert into usertb(name,address,telephone) values ('李四','宜春','12345678')");
+//        db.execSQL("insert into usertb(name,address,telephone) values ('王五','九江','123456789')");
         db.close();
     }
 
